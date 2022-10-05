@@ -7,8 +7,7 @@ if(localStorage.token == null){
   if(history.length == 2){
     window.history.back()
   }else{
-    alert("false")
-    window.location.replace("Projeto-login")
+    window.location.replace("https://knotmaxx.github.io/Projeto-login/")
   }
 }else{
   msgBoasVindas.innerHTML = `Bem vindo ${usuarioValido.nome}`
