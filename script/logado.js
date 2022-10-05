@@ -7,6 +7,7 @@ if(localStorage.token == null){
   if(history.length == 2){
     window.history.back()
   }else{
+    alert("false")
     window.location.replace("index.html")
   }
 }else{
