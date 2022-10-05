@@ -4,7 +4,7 @@ const usuarioValido = JSON.parse(localStorage.getItem("usuarioValido"))
 
 if(localStorage.token == null){
   alert("Esteja logado para Entrar")
-  window.location.replace("login.html")
+  window.location.replace("index.html")
   document.querySelector("body").style.display ="none"
 }else{
   msgBoasVindas.innerHTML = `Bem vindo ${usuarioValido.nome}`
@@ -14,6 +14,6 @@ if(localStorage.token == null){
 }
 
 btn.addEventListener("click",() =>{
-  window.location.replace("login.html")
+  window.location.replace("index.html")
 })
 
