@@ -8,7 +8,7 @@ if(localStorage.token == null){
     window.history.back()
   }else{
     alert("false")
-    window.location.replace("index.html")
+    window.location.replace("Projeto-login")
   }
 }else{
   msgBoasVindas.innerHTML = `Bem vindo ${usuarioValido.nome}`
