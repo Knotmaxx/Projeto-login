@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="estilos/login.css">
+</head>
+
+<body>
+  <article class="login">
+    <div class="login__container">
+     <div class="login__container2">
+      <header class="login__header">
+        <h1>Entrar</h1>
+      </header>
+      <form class="login__form" autocomplete="off">
+        <fieldset class="login__fieldset">
+          <div class="login__campo">
+            <label class="login__label" for="nome">Nome</label>
+            <input class="login__input" type="text" id="nome" required>
+          </div>
+          <div class="login__campo">
+            <label class="login__label" for="senha">Senha</label>
+            <div class="login__container-input">
+              <input class="login__input" type="password" id="senha" required><i id="login__eye" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+          </div>
+        </fieldset>
+        <div class="login__c-msg">
+          <p class="login__msg-erro">Nome ou senha estão incorretas</p>
+        </div>
+        <div class="login__c-btn">
+           <button class="login__btn login__btn--fundo-azul" type="submit">Entrar</button>
+        </div>
+      </form>
+     </div>
+     <footer class="login__footer">
+       <p class="login__P-Cadastro">Não tem uma Conta? <a class="login__Link-Cadastro" href="cadastro.html">Cadastre-se</a></p>
+     </footer>
+    </div>
+  </article>
+  <script src="script/login.js"></script>
+</body>
+</html>

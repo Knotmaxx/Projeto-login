@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="estilos/cadastro.css">
+  
+</head>
+
+<body>
+  <article class="cadastro">
+    <div class="cadastro__container">
+      <div class="cadastro__container2">
+        <header class="cadastro__header">
+          <h1>Cadastrar</h1>
+        </header>
+        <form class="cadastro__form">
+          <fieldset class="cadastro__fieldset">
+            <div id="campoNome" class="cadastro__campo">
+              <label id="labelNome" class="cadastro__label" for="nome">Nome</label>
+              <input class="cadastro__input" type="text" id="nome" autocomplete= "off"  required>
+            </div>
+            <div id="campoUsuario" class="cadastro__campo">
+              <label id="labelUsuario" class="cadastro__label" for="usuario">Usuario</label>
+              <input class="cadastro__input" type="text" id="usuario" autocomplete= "off" required>
+            </div>
+            <div id="campoSenha" class="cadastro__campo">
+              <label id="labelSenha"  class="cadastro__label" for="senha">Senha</label>
+              <div class="cadastro__container-input">
+                <input class="cadastro__input cadastro__input-eye" type="password" id="senha" required><i id="cadastro__eye1" class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div id="campoConfirmar" class="cadastro__campo">
+              <label id="labelConfirmar" class="cadastro__label" for="confirmarSenha">Confirmar Senha</label>
+              <div class="cadastro__container-input">
+                <input class="cadastro__input cadastro__input-eye" type="password" id="confirmarSenha" required><i id="cadastro__eye2" class="fa fa-eye" aria-hidden="true"></i>
+           
+              </div>
+            </div>
+          </fieldset>
+          <div class="cadastro__c-msg" >
+            <p class="cadastro__msg">Preença os campos corretamente</p>
+          </div>
+          <div class="cadastro__c-btn">
+            <button class="cadastro__btn cadastro__btn--fundo-azul" type="submit">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </article>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js" integrity="sha512-/hVAZO5POxCKdZMSLefw30xEVwjm94PAV9ynjskGbIpBvHO9EBplEcdUlBdCKutpZsF+La8Ag4gNrG0gAOn3Ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script/cadastro.js"></script>
+</body>
+
+</html>
