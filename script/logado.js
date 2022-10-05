@@ -4,8 +4,9 @@ const usuarioValido = JSON.parse(localStorage.getItem("usuarioValido"))
 
 if(localStorage.token == null){
   alert("Esteja logado para Entrar")
-  window.location.replace("index.html")
-  document.querySelector("body").style.display ="none"
+  if(history.length == 2){
+    window.history.back()
+  }
 }else{
   msgBoasVindas.innerHTML = `Bem vindo ${usuarioValido.nome}`
   localStorage.removeItem("token")
