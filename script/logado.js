@@ -8,6 +8,7 @@ if(localStorage.token == null){
     window.history.back()
   }else{
     window.location.replace("index.html")
+  }
 }else{
   msgBoasVindas.innerHTML = `Bem vindo ${usuarioValido.nome}`
   localStorage.removeItem("token")
