@@ -6,7 +6,8 @@ if(localStorage.token == null){
   alert("Esteja logado para Entrar")
   if(history.length == 2){
     window.history.back()
-  }
+  }else{
+    window.location.replace("index.html")
 }else{
   msgBoasVindas.innerHTML = `Bem vindo ${usuarioValido.nome}`
   localStorage.removeItem("token")
